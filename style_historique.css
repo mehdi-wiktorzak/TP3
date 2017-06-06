@@ -137,3 +137,23 @@ h2,h3
 	height: 1%;
     border: 1px solid black;
 }
+
+a {
+   
+    text-decoration: none;
+}
+
+a:link {
+    color : #80924B;
+    
+}
+
+a:visited {
+    color : #A0B06F;
+    t
+}
+
+a:hover : {
+   
+    color : #5A692A;
+}
